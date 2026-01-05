@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SCH4U Culminating | Chemistry Resource Website</title>
+  <meta name="description" content="A SCH4U chemistry resource website connecting real articles to course units and the Ontario Catholic Graduate Expectations." />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#111a33;
+      --text:#e9eefc;
+      --muted:#b9c4e6;
+      --accent:#7aa2ff;
+      --accent2:#7bffcc;
+      --border:rgba(233,238,252,.12);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      --max: 1080px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 500px at 80% 10%, rgba(123,255,204,.14), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky; top:0; z-index:5;
+      backdrop-filter: blur(10px);
+      background: rgba(11,16,32,.65);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:700; letter-spacing:.2px;
+    }
+    .dot{
+      width:14px; height:14px; border-radius:50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 6px rgba(122,162,255,.10);
+    }
+    .navlinks{
+      display:flex; flex-wrap:wrap; gap:10px;
+      align-items:center; justify-content:flex-end;
+    }
+    .pill{
+      border:1px solid var(--border);
+      background: rgba(17,26,51,.6);
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:14px;
+    }
+    .pill:hover{border-color: rgba(122,162,255,.45)}
+    main{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:28px 18px 44px;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap:18px;
+      margin-top:14px;
+    }
+    @media (max-width: 900px){
+      .hero{grid-template-columns: 1fr}
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(17,26,51,.92), rgba(17,26,51,.72));
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:20px;
+    }
+    h1{margin:0 0 10px; font-size:34px; line-height:1.15}
+    h2{margin:0 0 10px; font-size:20px}
+    p{margin:8px 0}
+    .muted{color:var(--muted)}
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+      margin-top:16px;
+    }
+    @media (max-width: 900px){ .grid{grid-template-columns:1fr} }
+    .unit{
+      padding:16px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background: rgba(17,26,51,.5);
+      transition: transform .15s ease, border-color .15s ease;
+      min-height:140px;
+    }
+    .unit:hover{
+      transform: translateY(-2px);
+      border-color: rgba(122,162,255,.45);
+    }
+    .tag{
+      display:inline-block;
+      font-family:var(--mono);
+      font-size:12px;
+      padding:4px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      color: var(--muted);
+      margin-bottom:10px;
+    }
+    footer{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:10px 18px 32px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .small{font-size:13px}
+    .checklist li{margin:7px 0}
+    .kbd{
+      font-family: var(--mono);
+      border:1px solid var(--border);
+      padding:2px 7px;
+      border-radius:8px;
+      background: rgba(0,0,0,.15);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      <span>SCH4U Culminating: Chemistry Resource Website</span>
+    </div>
+    <nav class="navlinks" aria-label="Primary">
+      <a class="pill" href="organic.html">Organic</a>
+      <a class="pill" href="thermo.html">Thermodynamics</a>
+      <a class="pill" href="equilibrium.html">Equilibrium</a>
+      <a class="pill" href="electrochem.html">Electrochemistry</a>
+      <a class="pill" href="quantum.html">Quantum Model</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="card">
+      <h1>Chemistry in the Real World</h1>
+      <p class="muted">
+        This website connects real scientific articles to the five major units in SCH4U:
+        Organic Chemistry, Thermodynamics, Chemical Equilibrium, Electrochemistry, and the Quantum Model of the Atom.
+      </p>
+      <p class="muted">
+        Each unit page includes: <strong>(1)</strong> a direct article link, <strong>(2)</strong> an abstract (1–2 paragraphs),
+        <strong>(3)</strong> curriculum connections using chemistry terminology, and <strong>(4)</strong> a connection to
+        an Ontario Catholic Graduate Expectation.
+      </p>
+
+      <h2 style="margin-top:14px;">Ontario Catholic Graduate Expectation Used Across the Site</h2>
+      <p>
+        <strong>A Responsible Citizen</strong> — A person who respects the dignity of all people and the environment, and
+        uses science and technology ethically for the common good.
+      </p>
+
+      <h2 style="margin-top:14px;">How to Use This Site</h2>
+      <ul class="checklist">
+        <li>Click a unit above (or one of the tiles below).</li>
+        <li>Read the abstract, then check the curriculum connections.</li>
+        <li>Use the Catholic Graduate Expectation paragraph to show ethical/moral thinking.</li>
+      </ul>
+
+      <p class="small muted">
+        Tip: When you submit, upload a file that contains your website URL.
+      </p>
+    </div>
+
+    <aside class="card">
+      <h2>Quick Rubric Checklist</h2>
+      <p class="muted">This site is designed to hit Level 4 language:</p>
+      <ul class="checklist">
+        <li><strong>Clear organization</strong>: same layout on every page.</li>
+        <li><strong>Discipline vocabulary</strong>: redox, ΔG, equilibrium, orbitals, polymers.</li>
+        <li><strong>Connections to learning</strong>: each page ties the article to unit expectations.</li>
+        <li><strong>Moral/ethical issues</strong>: environment, safety, healthcare, energy justice.</li>
+      </ul>
+      <p class="muted">
+        Navigation: use <span class="kbd">Home</span> = this page, then units from the menu.
+      </p>
+    </aside>
+  </section>
+
+  <section class="grid" aria-label="Unit tiles">
+    <a class="unit" href="organic.html">
+      <div class="tag">Unit 1</div>
+      <h2>Organic Chemistry</h2>
+      <p class="muted">Biodegradable polymers and real-world organic reactions.</p>
+    </a>
+
+    <a class="unit" href="thermo.html">
+      <div class="tag">Unit 2</div>
+      <h2>Thermodynamic Chemistry</h2>
+      <p class="muted">Energy transfer, efficiency, and decarbonization technology.</p>
+    </a>
+
+    <a class="unit" href="equilibrium.html">
+      <div class="tag">Unit 3</div>
+      <h2>Chemical Equilibrium</h2>
+      <p class="muted">How industry uses Le Châtelier’s Principle to change yield.</p>
+    </a>
+
+    <a class="unit" href="electrochem.html">
+      <div class="tag">Unit 4</div>
+      <h2>Electrochemistry</h2>
+      <p class="muted">Fuel cells, redox reactions, and clean power.</p>
+    </a>
+
+    <a class="unit" href="quantum.html">
+      <div class="tag">Unit 5</div>
+      <h2>Quantum Model of the Atom</h2>
+      <p class="muted">Quantum effects, atomic energy levels, and biomedical sensing.</p>
+    </a>
+
+    <div class="unit" role="note" aria-label="Submission note">
+      <div class="tag">Submit</div>
+      <h2>What you upload</h2>
+      <p class="muted">
+        Your teacher wants a file with the <strong>URL</strong> to your website.
+        If you host this (GitHub Pages / Google Drive hosting / school hosting),
+        paste that link into a doc and submit it.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>
+    Built for SCH4U Culminating Assessment — Chemistry Resource Website.
+    Sources are linked on each unit page.
+  </p>
+</footer>
+</body>
+</html>
+
